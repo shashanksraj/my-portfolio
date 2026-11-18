@@ -1,0 +1,26 @@
+.back-link {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.45em;
+  font-size: 0.95rem;
+  font-weight: 500;
+  letter-spacing: 0.01em;
+  color: var(--accent);
+  text-decoration: none;
+}
+
+.back-link-text {
+  text-decoration: underline;
+  text-decoration-thickness: 1px;
+  text-underline-offset: 0.28em;
+}
+
+.back-link:hover .back-link-text,
+.back-link:focus-visible .back-link-text {
+  text-decoration-thickness: 2px;
+}
+
+.back-link:focus-visible {
+  outline: 2px solid var(--accent);
+  outline-offset: 4px;
+}

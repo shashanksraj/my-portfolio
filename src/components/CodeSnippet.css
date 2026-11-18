@@ -1,0 +1,58 @@
+.snippet {
+  min-width: 0;
+  margin: 0;
+  border: 1px solid var(--stone);
+}
+
+.snippet-bar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1rem;
+  padding: 0.35rem 0.75rem;
+  border-bottom: 1px solid var(--stone);
+  background: color-mix(in srgb, var(--ink) 4%, var(--ivory));
+}
+
+.snippet-filename {
+  font-family: var(--mono);
+  font-size: 0.8rem;
+  overflow-wrap: anywhere;
+}
+
+.snippet-copy {
+  padding: 0.4rem 0.2rem;
+  border: 0;
+  background: none;
+  font: inherit;
+  font-size: 0.85rem;
+  font-weight: 600;
+  color: var(--accent);
+  cursor: pointer;
+}
+
+.snippet-copy:hover {
+  text-decoration: underline;
+}
+
+.snippet-code {
+  margin: 0;
+  padding: 1rem;
+  overflow-x: auto;
+  font-family: var(--mono);
+  font-size: 0.85rem;
+  line-height: 1.6;
+  tab-size: 2;
+}
+
+.snippet-caption {
+  padding: 0.75rem 1rem;
+  border-top: 1px solid var(--stone);
+  font-size: 0.9rem;
+  line-height: 1.5;
+  color: var(--muted);
+}
+
+.snippet-caption a {
+  color: var(--accent);
+}

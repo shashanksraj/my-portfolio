@@ -1,0 +1,186 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <title>Shashank Raj Pitla - Resume</title>
+    <style>
+      @page {
+        size: Letter;
+        margin: 0.5in 0.55in;
+      }
+      * {
+        box-sizing: border-box;
+      }
+      html {
+        -webkit-print-color-adjust: exact;
+      }
+      body {
+        margin: 0;
+        font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+        font-size: 9.6pt;
+        line-height: 1.32;
+        color: #1a1a1a;
+      }
+      a {
+        color: inherit;
+        text-decoration: none;
+      }
+      header {
+        text-align: center;
+        margin-bottom: 7pt;
+      }
+      h1 {
+        margin: 0;
+        font-family: Georgia, 'Times New Roman', serif;
+        font-size: 21pt;
+        font-weight: 400;
+        letter-spacing: 0.01em;
+      }
+      .contact {
+        margin-top: 3pt;
+        font-size: 9.4pt;
+        color: #333;
+      }
+      .contact span + span::before {
+        content: '  |  ';
+        color: #888;
+        white-space: pre;
+      }
+      h2 {
+        margin: 8pt 0 3pt;
+        padding-bottom: 1.5pt;
+        border-bottom: 0.75pt solid #1a1a1a;
+        font-size: 9.6pt;
+        font-weight: 700;
+        letter-spacing: 0.1em;
+        text-transform: uppercase;
+      }
+      .row {
+        display: flex;
+        justify-content: space-between;
+        gap: 12pt;
+        margin-top: 3.5pt;
+      }
+      .row:first-of-type {
+        margin-top: 0;
+      }
+      .row .title {
+        font-weight: 700;
+      }
+      .row .meta {
+        white-space: nowrap;
+      }
+      .stack {
+        font-weight: 400;
+        font-style: italic;
+        color: #333;
+      }
+      ul {
+        margin: 1.5pt 0 0;
+        padding-left: 12pt;
+      }
+      li {
+        margin: 0.8pt 0;
+        padding-left: 1pt;
+      }
+      .skills p,
+      .leadership p {
+        margin: 1.4pt 0;
+      }
+      .skills b {
+        font-weight: 700;
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <h1>Shashank Raj Pitla</h1>
+      <div class="contact">
+        <span><a href="mailto:shashankraj1412@gmail.com">shashankraj1412@gmail.com</a></span><span><a href="https://www.linkedin.com/in/shashank-raj-pitla-9b5a8a2bb/">linkedin.com/in/shashank-raj-pitla-9b5a8a2bb</a></span><span><a href="https://github.com/shashanksraj">github.com/shashanksraj</a></span>
+      </div>
+    </header>
+
+    <section>
+      <h2>Education</h2>
+      <div class="row">
+        <span class="title">University of Arizona</span>
+        <span class="meta">December 2025</span>
+      </div>
+      <div>Bachelor of Science in Computer Science, Minor in Business</div>
+      <ul>
+        <li>Honors: Global Academic Excellence Award, International Baccalaureate Diploma</li>
+        <li>Coursework: Data Structures &amp; Algorithms, Object-Oriented Programming, Systems Programming</li>
+      </ul>
+    </section>
+
+    <section>
+      <h2>Work Experience</h2>
+      <div class="row">
+        <span><span class="title">Software Engineer</span> | SRP Tech</span>
+        <span class="meta">April 2026 - Present</span>
+      </div>
+      <ul>
+        <li>Developed full-stack software applications using React, TypeScript, Python, and API-based backend services.</li>
+        <li>Worked on application functionality, backend integrations, and data-driven software features.</li>
+      </ul>
+
+      <div class="row">
+        <span><span class="title">Software Engineering Intern</span> | PDSR Co.</span>
+        <span class="meta">May 2025 - August 2025</span>
+      </div>
+      <ul>
+        <li>Built Python automation and data-validation workflows for internal business pipelines, reducing manual administrative processing and improving data consistency.</li>
+        <li>Designed and deployed the company's first responsive website using HTML, CSS, and JavaScript, with an SEO-focused structure to improve online visibility and support client outreach.</li>
+      </ul>
+
+      <div class="row">
+        <span><span class="title">Software Developer</span> | Eco Pharma</span>
+        <span class="meta">May 2023 - August 2024</span>
+      </div>
+      <ul>
+        <li>Developed and optimized backend services using Python and PostgreSQL, improving database query efficiency and supporting business operations.</li>
+        <li>Built interactive data analytics dashboards using PowerBI, Matplotlib, and Seaborn so teams could monitor operational metrics and make data-driven decisions.</li>
+      </ul>
+    </section>
+
+    <section>
+      <h2>Projects</h2>
+      <div class="row">
+        <span><span class="title">CityQuest: Live, Verified Quest Planner</span> (team project) | <span class="stack">Python, FastAPI, Gemini API, Google Maps Platform, Three.js, Cloud Run</span></span>
+      </div>
+      <ul>
+        <li>Built with a team at the Gemini 4 Argon SF Hackathon. Gemini plans a short quest of real stops, and a backend verifier checks each stop against live Google Places and Routes data: business status, opening hours, and walking-time budget.</li>
+        <li>Contributed to the interactive 3D frontend (React Three Fiber): third-person movement, collision, camera tracking, and waypoint navigation, and connected Gemini-generated objectives to landmarks in the 3D scene.</li>
+      </ul>
+
+      <div class="row">
+        <span><span class="title">End-to-End Compiler Pipeline with Code Generation</span> | <span class="stack">C, Unix</span></span>
+      </div>
+      <ul>
+        <li>Wrote the scanner, recursive-descent parser, syntax tree construction, and declaration checks for a C-Minus compiler in C, for a university course built on instructor-provided starter files.</li>
+        <li>Implemented symbol tables, three-address code, and MIPS assembly generation, including stack-frame handling for function calls and local variables.</li>
+      </ul>
+
+      <div class="row">
+        <span><span class="title">Online Sexism Detection</span> | <span class="stack">Python, Scikit-learn, NLTK, Word2Vec</span></span>
+      </div>
+      <ul>
+        <li>Built a binary sexism classifier on SemEval 2023 Task 10 (EDOS) data, comparing Naive Bayes, Logistic Regression, K-Nearest Neighbors, and Random Forest on TF-IDF and Word2Vec features.</li>
+        <li>Preprocessed text with NLTK (tokenization, stop-word removal, lemmatization). In a single recorded run, a Random Forest on TF-IDF features reached 0.80 weighted F1 on the 1,086-post test split.</li>
+      </ul>
+    </section>
+
+    <section class="skills">
+      <h2>Technical Skills</h2>
+      <p><b>Languages:</b> Python, JavaScript, TypeScript, C, C++, Java, SQL, HTML/CSS</p>
+      <p><b>Frameworks &amp; Libraries:</b> React, FastAPI, Node.js, Express.js, Three.js, React Three Fiber, Pandas, Scikit-learn, NLTK</p>
+      <p><b>Databases, Tools &amp; Platforms:</b> PostgreSQL, MongoDB, Git, REST APIs, JWT, Linux/Unix, Google Maps Platform</p>
+      <p><b>AI/ML:</b> OpenAI API, Gemini API, Retrieval-Augmented Generation (RAG), Vector Search, NLP</p>
+    </section>
+
+    <section class="leadership">
+      <h2>Leadership</h2>
+      <p>Treasurer, WildCats Chess Club | Captain, Intramural Soccer | Cyber Security Club, Blue Chip Leadership Club</p>
+    </section>
+  </body>
+</html>

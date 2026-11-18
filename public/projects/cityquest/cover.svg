@@ -1,0 +1,91 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 600" role="img">
+  <title>Stylized low-poly waterfront with a dotted quest route</title>
+  <rect width="800" height="600" fill="#EDEBE4"/>
+
+  <!-- sun and distant hills -->
+  <circle cx="640" cy="140" r="46" fill="#F7F5F0"/>
+  <polygon points="0,330 120,288 250,322 370,276 490,316 610,284 800,322 800,380 0,380" fill="#D3DBC9"/>
+  <polygon points="120,288 250,322 190,380 80,380" fill="#C6D0BA"/>
+  <polygon points="370,276 490,316 440,380 330,380" fill="#C6D0BA"/>
+  <polygon points="610,284 800,322 800,380 700,380" fill="#C6D0BA"/>
+
+  <!-- buildings: front face, right face, top face -->
+  <g stroke="#C4C0B5" stroke-width="1.5" stroke-linejoin="round">
+    <!-- 1 -->
+    <rect x="64" y="272" width="60" height="108" fill="#F7F5F0"/>
+    <polygon points="124,272 148,260 148,368 124,380" fill="#DAD7CF"/>
+    <polygon points="64,272 88,260 148,260 124,272" fill="#E8E5DC"/>
+    <!-- 2 -->
+    <rect x="160" y="312" width="52" height="68" fill="#F7F5F0"/>
+    <polygon points="212,312 236,300 236,368 212,380" fill="#DAD7CF"/>
+    <polygon points="160,312 184,300 236,300 212,312" fill="#E8E5DC"/>
+    <!-- 3 -->
+    <rect x="236" y="236" width="56" height="144" fill="#F7F5F0"/>
+    <polygon points="292,236 316,224 316,368 292,380" fill="#DAD7CF"/>
+    <polygon points="236,236 260,224 316,224 292,236" fill="#E8E5DC"/>
+    <!-- long hall at the foot of the tower -->
+    <rect x="320" y="322" width="84" height="58" fill="#F7F5F0"/>
+    <polygon points="320,322 344,310 428,310 404,322" fill="#E8E5DC"/>
+    <!-- tower -->
+    <rect x="404" y="208" width="44" height="172" fill="#F7F5F0"/>
+    <polygon points="448,208 472,196 472,368 448,380" fill="#DAD7CF"/>
+    <!-- 5 -->
+    <rect x="500" y="282" width="64" height="98" fill="#F7F5F0"/>
+    <polygon points="564,282 588,270 588,368 564,380" fill="#DAD7CF"/>
+    <polygon points="500,282 524,270 588,270 564,282" fill="#E8E5DC"/>
+    <!-- 6 -->
+    <rect x="600" y="248" width="52" height="132" fill="#F7F5F0"/>
+    <polygon points="652,248 676,236 676,368 652,380" fill="#DAD7CF"/>
+    <polygon points="600,248 624,236 676,236 652,248" fill="#E8E5DC"/>
+    <!-- 7 -->
+    <rect x="690" y="304" width="56" height="76" fill="#F7F5F0"/>
+    <polygon points="746,304 770,292 770,368 746,380" fill="#DAD7CF"/>
+    <polygon points="690,304 714,292 770,292 746,304" fill="#E8E5DC"/>
+  </g>
+
+  <!-- window slits -->
+  <g fill="#DAD7CF">
+    <rect x="76" y="292" width="10" height="14"/><rect x="100" y="292" width="10" height="14"/>
+    <rect x="76" y="322" width="10" height="14"/><rect x="100" y="322" width="10" height="14"/>
+    <rect x="248" y="256" width="10" height="14"/><rect x="270" y="256" width="10" height="14"/>
+    <rect x="248" y="290" width="10" height="14"/><rect x="270" y="290" width="10" height="14"/>
+    <rect x="248" y="324" width="10" height="14"/><rect x="270" y="324" width="10" height="14"/>
+    <rect x="334" y="338" width="12" height="22"/><rect x="360" y="338" width="12" height="22"/><rect x="386" y="338" width="12" height="22"/>
+    <rect x="512" y="300" width="10" height="14"/><rect x="536" y="300" width="10" height="14"/>
+    <rect x="512" y="334" width="10" height="14"/><rect x="536" y="334" width="10" height="14"/>
+    <rect x="612" y="268" width="10" height="14"/><rect x="630" y="268" width="10" height="14"/>
+    <rect x="612" y="302" width="10" height="14"/><rect x="630" y="302" width="10" height="14"/>
+  </g>
+
+  <!-- clock tower roof and clock -->
+  <polygon points="404,208 448,208 438,148" fill="#4263B8"/>
+  <polygon points="448,208 472,196 438,148" fill="#34519A"/>
+  <circle cx="426" cy="238" r="13" fill="#F7F5F0" stroke="#222222" stroke-width="2"/>
+  <path d="M426 238 V230 M426 238 L432 241" stroke="#222222" stroke-width="2" stroke-linecap="round" fill="none"/>
+
+  <!-- destination pin -->
+  <path d="M426 86 c-11 0 -19 8 -19 19 c0 13 19 33 19 33 s19 -20 19 -33 c0 -11 -8 -19 -19 -19z" fill="#4263B8"/>
+  <circle cx="426" cy="105" r="6" fill="#F7F5F0"/>
+
+  <!-- promenade and water -->
+  <rect x="0" y="380" width="800" height="32" fill="#F7F5F0"/>
+  <line x1="0" y1="412" x2="800" y2="412" stroke="#C4C0B5" stroke-width="2"/>
+  <rect x="0" y="412" width="800" height="188" fill="#C9D3EC"/>
+  <rect x="0" y="412" width="800" height="14" fill="#B7C5E6"/>
+  <g stroke="#E6ECF8" stroke-width="4" stroke-linecap="round" fill="none">
+    <path d="M70 470 q20 -10 40 0 t40 0 t40 0"/>
+    <path d="M300 500 q20 -10 40 0 t40 0 t40 0 t40 0"/>
+    <path d="M560 460 q20 -10 40 0 t40 0 t40 0"/>
+    <path d="M150 545 q20 -10 40 0 t40 0"/>
+    <path d="M480 552 q20 -10 40 0 t40 0 t40 0"/>
+  </g>
+
+  <!-- quest route and waypoints -->
+  <line x1="48" y1="396" x2="752" y2="396" stroke="#4263B8" stroke-width="4" stroke-linecap="round" stroke-dasharray="1 11"/>
+  <g stroke="#4263B8" stroke-width="4">
+    <circle cx="130" cy="396" r="9" fill="#F7F5F0"/>
+    <circle cx="270" cy="396" r="9" fill="#F7F5F0"/>
+    <circle cx="590" cy="396" r="9" fill="#F7F5F0"/>
+  </g>
+  <circle cx="426" cy="396" r="11" fill="#4263B8" stroke="#F7F5F0" stroke-width="4"/>
+</svg>

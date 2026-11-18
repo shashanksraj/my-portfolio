@@ -1,0 +1,48 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 600" role="img">
+  <title>A central module connected to four smaller modules</title>
+  <rect width="800" height="600" fill="#EDEBE4"/>
+
+  <!-- connections -->
+  <g stroke="#8FA3D6" stroke-width="4" stroke-linecap="round">
+    <line x1="400" y1="300" x2="190" y2="170"/>
+    <line x1="400" y1="300" x2="610" y2="170"/>
+    <line x1="400" y1="300" x2="190" y2="430"/>
+    <line x1="400" y1="300" x2="610" y2="430"/>
+  </g>
+
+  <!-- outer modules -->
+  <g fill="#F7F5F0" stroke="#C4C0B5" stroke-width="2">
+    <rect x="130" y="110" width="120" height="120" rx="10"/>
+    <rect x="550" y="110" width="120" height="120" rx="10"/>
+    <rect x="130" y="370" width="120" height="120" rx="10"/>
+    <rect x="550" y="370" width="120" height="120" rx="10"/>
+  </g>
+
+  <!-- module glyphs: deliberately abstract, not interface elements -->
+  <g fill="#DAD7CF">
+    <rect x="156" y="144" width="68" height="9" rx="4.5"/>
+    <rect x="156" y="164" width="52" height="9" rx="4.5"/>
+    <rect x="156" y="184" width="62" height="9" rx="4.5"/>
+  </g>
+  <circle cx="610" cy="170" r="26" fill="none" stroke="#C4C0B5" stroke-width="9"/>
+  <g fill="#DAD7CF">
+    <circle cx="170" cy="410" r="9"/><circle cx="210" cy="410" r="9"/>
+    <circle cx="170" cy="450" r="9"/><circle cx="210" cy="450" r="9"/>
+  </g>
+  <polygon points="610,398 640,454 580,454" fill="none" stroke="#C4C0B5" stroke-width="9" stroke-linejoin="round"/>
+
+  <!-- connection nodes -->
+  <g fill="#4263B8" stroke="#EDEBE4" stroke-width="4">
+    <circle cx="295" cy="235" r="8"/>
+    <circle cx="505" cy="235" r="8"/>
+    <circle cx="295" cy="365" r="8"/>
+    <circle cx="505" cy="365" r="8"/>
+  </g>
+
+  <!-- central module -->
+  <rect x="320" y="220" width="160" height="160" rx="12" fill="#F7F5F0" stroke="#55534E" stroke-width="3"/>
+  <g fill="#B7C2AA">
+    <rect x="378" y="250" width="44" height="100" rx="6"/>
+    <rect x="350" y="278" width="100" height="44" rx="6"/>
+  </g>
+</svg>

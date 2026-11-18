@@ -1,0 +1,71 @@
+.term-list {
+  margin: 0;
+}
+
+.term {
+  display: grid;
+  grid-template-columns: 13rem minmax(0, 1fr);
+  gap: 0.25rem 1.5rem;
+  padding: 1rem 0;
+  border-bottom: 1px solid var(--stone);
+}
+
+.term:first-child {
+  padding-top: 0;
+}
+
+.term:last-child {
+  border-bottom: 0;
+}
+
+.term dt {
+  font-weight: 600;
+  line-height: 1.4;
+}
+
+.term dd {
+  margin: 0;
+  max-width: 36rem;
+  font-size: 1rem;
+  line-height: 1.6;
+}
+
+.stat-list {
+  display: grid;
+  /* Two columns keeps four stats as a tidy 2x2 instead of a 3+1 orphan. */
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 1.75rem 2rem;
+  max-width: 32rem;
+  margin: 0;
+}
+
+.stat {
+  display: flex;
+  flex-direction: column-reverse;
+  justify-content: flex-end;
+  padding-top: 0.9rem;
+  border-top: 1px solid var(--stone);
+}
+
+.stat dd {
+  margin: 0;
+  font-family: var(--serif);
+  font-size: clamp(2rem, 3.6vw, 2.75rem);
+  font-weight: 500;
+  font-optical-sizing: auto;
+  line-height: 1.1;
+  letter-spacing: -0.02em;
+}
+
+.stat dt {
+  margin-top: 0.3rem;
+  font-size: 0.95rem;
+  line-height: 1.4;
+  color: var(--muted);
+}
+
+@media (max-width: 768px) {
+  .term {
+    grid-template-columns: minmax(0, 1fr);
+  }
+}

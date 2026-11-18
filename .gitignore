@@ -1,0 +1,55 @@
+# Logs
+logs
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+lerna-debug.log*
+
+node_modules
+dist
+dist-ssr
+*.local
+coverage
+*.tsbuildinfo
+
+# Environment files and credentials
+.env
+.env.*
+!.env.example
+*.pem
+*.key
+*.p12
+*.pfx
+.npmrc
+.vercel
+
+# Temporary and backup files
+tmp/
+temp/
+*.tmp
+*.bak
+*.orig
+Thumbs.db
+
+# Local tooling state
+.cursor/
+
+# Editor directories and files
+.vscode/*
+!.vscode/extensions.json
+.idea
+.DS_Store
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+*.sw?
+
+# Private documents: never commit or serve the original (unsanitized) resume.
+# Only public/resume.pdf, generated from resume-source/resume.html, is public.
+Resume_*
+resume_*.pdf
+*.docx.pdf
+private/

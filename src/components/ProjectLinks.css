@@ -1,0 +1,46 @@
+.resource-list {
+  margin: 0;
+  max-width: 36rem;
+}
+
+.resource {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: baseline;
+  justify-content: space-between;
+  gap: 0.35rem 1rem;
+  padding: 0.85rem 0;
+  border-bottom: 1px solid var(--stone);
+}
+
+.resource:first-child {
+  padding-top: 0;
+}
+
+.resource:last-child {
+  padding-bottom: 0;
+  border-bottom: 0;
+}
+
+.resource dt {
+  font-size: 1.05rem;
+  font-weight: 600;
+}
+
+.resource dd {
+  margin: 0;
+}
+
+.resource-link {
+  /* Repository URLs can be long; let them wrap on narrow screens. */
+  overflow-wrap: anywhere;
+  font-weight: 500;
+  color: var(--accent);
+  text-decoration: underline;
+  text-decoration-thickness: 1px;
+  text-underline-offset: 0.28em;
+}
+
+.resource-link:hover {
+  text-decoration-thickness: 2px;
+}

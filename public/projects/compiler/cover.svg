@@ -1,0 +1,80 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 600" role="img">
+  <title>Source code flowing through a syntax tree into assembly output</title>
+  <rect width="800" height="600" fill="#EDEBE4"/>
+
+  <!-- source card -->
+  <rect x="36" y="150" width="236" height="290" rx="6" fill="#F7F5F0" stroke="#C4C0B5" stroke-width="2"/>
+  <rect x="36" y="150" width="236" height="34" rx="6" fill="#E6E3DA"/>
+  <rect x="36" y="170" width="236" height="14" fill="#E6E3DA"/>
+  <line x1="36" y1="184" x2="272" y2="184" stroke="#C4C0B5" stroke-width="2"/>
+  <g font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="13" fill="#222222">
+    <text x="54" y="218"><tspan fill="#4263B8">int</tspan> fact(<tspan fill="#4263B8">int</tspan> n) {</text>
+    <text x="72" y="248"><tspan fill="#4263B8">if</tspan> (n &lt; 2)</text>
+    <text x="90" y="278"><tspan fill="#4263B8">return</tspan> 1;</text>
+    <text x="72" y="308"><tspan fill="#4263B8">return</tspan> n * fact(n - 1);</text>
+    <text x="54" y="338">}</text>
+  </g>
+  <g fill="#DAD7CF">
+    <rect x="54" y="370" width="120" height="8" rx="4"/>
+    <rect x="54" y="392" width="84" height="8" rx="4"/>
+  </g>
+
+  <!-- arrow 1 -->
+  <path d="M284 295 H318 M308 285 L320 295 L308 305" stroke="#4263B8" stroke-width="4" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+
+  <!-- syntax tree -->
+  <g stroke="#8E8A80" stroke-width="3" stroke-linecap="round">
+    <line x1="420" y1="214" x2="372" y2="284"/>
+    <line x1="420" y1="214" x2="468" y2="284"/>
+    <line x1="372" y1="284" x2="346" y2="352"/>
+    <line x1="372" y1="284" x2="398" y2="352"/>
+    <line x1="468" y1="284" x2="442" y2="352"/>
+    <line x1="468" y1="284" x2="494" y2="352"/>
+  </g>
+  <g stroke="#55534E" stroke-width="3" fill="#F7F5F0">
+    <circle cx="372" cy="284" r="14"/>
+    <circle cx="468" cy="284" r="14"/>
+    <circle cx="346" cy="352" r="12"/>
+    <circle cx="398" cy="352" r="12"/>
+    <circle cx="442" cy="352" r="12"/>
+    <circle cx="494" cy="352" r="12"/>
+  </g>
+  <circle cx="420" cy="214" r="16" fill="#4263B8"/>
+  <circle cx="398" cy="352" r="12" fill="#C9D3EC" stroke="#4263B8" stroke-width="3"/>
+
+  <!-- arrow 2 -->
+  <path d="M520 295 H554 M544 285 L556 295 L544 305" stroke="#4263B8" stroke-width="4" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+
+  <!-- assembly card -->
+  <rect x="566" y="150" width="200" height="290" rx="6" fill="#F7F5F0" stroke="#C4C0B5" stroke-width="2"/>
+  <rect x="566" y="150" width="200" height="34" rx="6" fill="#E6E3DA"/>
+  <rect x="566" y="170" width="200" height="14" fill="#E6E3DA"/>
+  <line x1="566" y1="184" x2="766" y2="184" stroke="#C4C0B5" stroke-width="2"/>
+  <g font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="13" fill="#222222">
+    <text x="582" y="218" fill="#4263B8">fact:</text>
+    <!-- mnemonics in one column, operands in another -->
+    <g>
+      <text x="598" y="244">addiu</text>
+      <text x="598" y="270">sw</text>
+      <text x="598" y="296">lw</text>
+      <text x="598" y="322">jal</text>
+      <text x="598" y="348">lw</text>
+      <text x="598" y="374">jr</text>
+    </g>
+    <g>
+      <text x="650" y="244">$sp, $sp, -16</text>
+      <text x="650" y="270">$ra, 4($sp)</text>
+      <text x="650" y="296">$t0, 8($fp)</text>
+      <text x="650" y="322">fact</text>
+      <text x="650" y="348">$ra, 4($sp)</text>
+      <text x="650" y="374">$ra</text>
+    </g>
+  </g>
+
+  <!-- stage labels -->
+  <g font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="13" letter-spacing="2" fill="#55534E" text-anchor="middle">
+    <text x="154" y="486">SOURCE</text>
+    <text x="420" y="486">SYNTAX TREE</text>
+    <text x="666" y="486">MIPS</text>
+  </g>
+</svg>

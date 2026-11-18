@@ -1,0 +1,83 @@
+.flow {
+  margin: 0;
+}
+
+.flow-steps {
+  display: grid;
+  grid-template-columns: repeat(var(--steps), minmax(0, 1fr));
+  gap: 1.75rem;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.flow-step {
+  position: relative;
+  padding: 0.9rem 0.9rem 1rem;
+  border: 1px solid var(--stone);
+}
+
+.flow-step--endpoint {
+  border-style: dashed;
+  background: color-mix(in srgb, var(--ink) 4%, var(--ivory));
+}
+
+/* The connector between steps. */
+.flow-step:not(:last-child)::after {
+  content: '→';
+  position: absolute;
+  top: 0.8rem;
+  right: -1.5rem;
+  width: 1.25rem;
+  text-align: center;
+  color: var(--accent);
+}
+
+.flow-step-title {
+  font-size: 0.95rem;
+  font-weight: 600;
+  line-height: 1.3;
+}
+
+.flow-step-note {
+  margin-top: 0.35rem;
+  font-size: 0.85rem;
+  line-height: 1.45;
+  color: var(--muted);
+}
+
+.flow-step-items {
+  margin: 0.6rem 0 0;
+  padding: 0;
+  list-style: none;
+}
+
+.flow-step-items li {
+  padding: 0.3rem 0;
+  border-top: 1px solid var(--stone);
+  font-size: 0.85rem;
+  line-height: 1.4;
+}
+
+.flow-caption {
+  margin-top: 1rem;
+  max-width: 40rem;
+  font-size: 0.9rem;
+  line-height: 1.5;
+  color: var(--muted);
+}
+
+@media (max-width: 900px) {
+  .flow-steps {
+    grid-template-columns: minmax(0, 1fr);
+    gap: 1.75rem;
+  }
+
+  .flow-step:not(:last-child)::after {
+    content: '↓';
+    top: auto;
+    right: auto;
+    bottom: -1.65rem;
+    left: 0.9rem;
+  }
+}

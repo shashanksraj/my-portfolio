@@ -1,0 +1,139 @@
+.page {
+  display: flex;
+  flex-direction: column;
+  min-height: 100svh;
+  max-width: 72rem;
+  margin: 0 auto;
+}
+
+main {
+  display: flex;
+  flex: 1;
+  flex-direction: column;
+}
+
+/* main is focused programmatically after navigation, not by the user. */
+main:focus {
+  outline: none;
+}
+
+/* Homepage sections (Selected Work, About, Experience, Contact). */
+.home-section {
+  scroll-margin-top: 1.5rem;
+  padding: 4.5rem var(--gutter) 0;
+}
+
+/* Hero: sized by its content so the first project is never far below the fold. */
+.hero {
+  display: flex;
+  flex-direction: column;
+  gap: 3.5rem;
+  padding: 3.25rem var(--gutter) 0;
+}
+
+.hero-label,
+.hero-location {
+  font-size: 0.75rem;
+  font-weight: 600;
+  letter-spacing: 0.16em;
+  text-transform: uppercase;
+}
+
+.hero-label {
+  color: var(--accent);
+}
+
+.hero-heading {
+  display: flex;
+  flex-direction: column;
+  gap: 0.7rem;
+  margin-top: 1.1rem;
+}
+
+.hero-greeting {
+  font-family: var(--serif);
+  font-size: clamp(2.5rem, 5.2vw, 4.35rem);
+  font-weight: 500;
+  font-optical-sizing: auto;
+  line-height: 1.06;
+  letter-spacing: -0.025em;
+}
+
+.hero-statement {
+  max-width: 28rem;
+  font-family: var(--serif);
+  font-size: clamp(1.45rem, 2.5vw, 2.05rem);
+  font-weight: 400;
+  font-style: italic;
+  font-optical-sizing: auto;
+  line-height: 1.3;
+  letter-spacing: -0.015em;
+}
+
+.hero-copy {
+  max-width: 34rem;
+  margin-top: 1.5rem;
+  font-size: 1.125rem;
+  line-height: 1.65;
+}
+
+.hero-link {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.45em;
+  align-self: flex-start;
+  margin-top: 1.5rem;
+  padding: 0.5rem 0;
+  font-size: 1rem;
+  font-weight: 500;
+  letter-spacing: 0.01em;
+  color: var(--accent);
+  text-decoration: none;
+}
+
+.hero-link-text {
+  text-decoration: underline;
+  text-underline-offset: 0.28em;
+  text-decoration-thickness: 1px;
+}
+
+.hero-link:hover .hero-link-text,
+.hero-link:focus-visible .hero-link-text {
+  text-decoration-thickness: 2px;
+}
+
+.hero-link-arrow {
+  font-size: 1.05em;
+  line-height: 1;
+}
+
+.hero-rule {
+  width: 100%;
+  margin: 0;
+  border: 0;
+  border-top: 1px solid var(--stone);
+}
+
+.hero-location {
+  margin-top: 1rem;
+  color: var(--ink);
+}
+
+@media (max-width: 768px) {
+  .home-section {
+    padding-top: 3.5rem;
+  }
+
+  .hero {
+    gap: 2.75rem;
+    padding-top: 2.35rem;
+  }
+
+  .hero-statement {
+    max-width: 20rem;
+  }
+
+  .hero-copy {
+    font-size: 1.05rem;
+  }
+}

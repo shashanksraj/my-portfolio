@@ -1,0 +1,132 @@
+.gallery {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 1.75rem 1.5rem;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.gallery-item {
+  margin: 0;
+}
+
+.gallery-open {
+  display: block;
+  width: 100%;
+  aspect-ratio: 4 / 3;
+  padding: 0;
+  overflow: hidden;
+  border: 1px solid var(--stone);
+  background: color-mix(in srgb, var(--ink) 5%, var(--ivory));
+  cursor: zoom-in;
+}
+
+.gallery-open img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 200ms ease;
+}
+
+@media (hover: hover) {
+  .gallery-open:hover {
+    border-color: color-mix(in srgb, var(--accent) 45%, transparent);
+  }
+
+  .gallery-open:hover img {
+    transform: scale(1.02);
+  }
+}
+
+.gallery-caption {
+  margin-top: 0.6rem;
+  font-size: 0.9rem;
+  line-height: 1.45;
+  color: var(--muted);
+}
+
+/* Lightbox */
+.lightbox {
+  width: min(92vw, 64rem);
+  max-width: none;
+  max-height: 92svh;
+  padding: 0;
+  overflow: auto;
+  border: 0;
+  background: var(--ivory);
+  color: var(--ink);
+  animation: lightbox-in 160ms ease;
+}
+
+.lightbox::backdrop {
+  background: color-mix(in srgb, var(--ink) 75%, transparent);
+}
+
+.lightbox-bar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1rem;
+  padding: 0.35rem 1rem;
+  border-bottom: 1px solid var(--stone);
+}
+
+.lightbox-count {
+  font-size: 0.8rem;
+  font-weight: 600;
+  letter-spacing: 0.1em;
+  color: var(--muted);
+}
+
+.lightbox-actions {
+  display: flex;
+  gap: 1rem;
+}
+
+.lightbox-actions button {
+  padding: 0.6rem 0.25rem;
+  border: 0;
+  background: none;
+  font: inherit;
+  font-size: 0.95rem;
+  font-weight: 500;
+  color: var(--accent);
+  cursor: pointer;
+}
+
+.lightbox-actions button:hover {
+  text-decoration: underline;
+}
+
+.lightbox-figure {
+  margin: 0;
+  padding: 1rem;
+}
+
+.lightbox-figure img {
+  display: block;
+  max-width: 100%;
+  max-height: calc(92svh - 9rem);
+  margin: 0 auto;
+  object-fit: contain;
+}
+
+.lightbox-figure figcaption {
+  margin-top: 0.75rem;
+  font-size: 0.95rem;
+  color: var(--muted);
+}
+
+@keyframes lightbox-in {
+  from {
+    opacity: 0;
+  }
+}
+
+@media (max-width: 768px) {
+  .gallery {
+    grid-template-columns: minmax(0, 1fr);
+  }
+}

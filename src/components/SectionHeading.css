@@ -1,0 +1,24 @@
+.section-label {
+  font-size: 0.75rem;
+  font-weight: 600;
+  letter-spacing: 0.16em;
+  text-transform: uppercase;
+  color: var(--accent);
+}
+
+.section-title {
+  margin-top: 0.7rem;
+  font-family: var(--serif);
+  font-size: clamp(2rem, 3.6vw, 2.85rem);
+  font-weight: 500;
+  font-optical-sizing: auto;
+  line-height: 1.1;
+  letter-spacing: -0.02em;
+}
+
+.section-rule {
+  width: 100%;
+  margin: 1.35rem 0 0;
+  border: 0;
+  border-top: 1px solid var(--stone);
+}
